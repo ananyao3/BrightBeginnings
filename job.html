@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Job Opportunities</title>
+        <link rel="stylesheet" href="job.css"/>
+    </head>
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        div {text-align: center;}
+    </style>
+    <body>
+        <div class="topnav">
+            <div class="nav2">
+              <img src="Pictures/logo.png" width="60%"></a>
+              </div>
+            <div class="fifth"> <a href="children.html">Children's Corner</a> </div>
+            <div class="fourth"> <a href="education.html">Educational Resources</a> </div>
+            <div class="third"> <a href="job.html">Job Opportunities</a> </div>
+            <div class="second"> <a href="resources.html">Free Resources</a> </div>
+            <div class="first"> <a href="home.html">Home</a> </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h1>Job Opportunities</h1>
+        <br>
+        <div class="row">
+            <div class="column">
+                <a href="https://www.workopolis.com/jobsearch/immigration-refugee-jobs?job=zhJGFsMztrAuMD4sXJb4EQ_Ncwduv1agRm0we5idiOdiZRf5IOENwA">  
+                    <img src="Pictures/directJobs1.jpg" width="100" height="100">
+                </a>
+                <p>Right Source Immigration Canada helps in Canadian Immigration and Citizenship matters. We respect and value our staff and our clients. We believe in empathy and compassion. Current job openings are for office assistants.</p>
+                <a href="https://www.workopolis.com/jobsearch/immigration-refugee-jobs?job=zhJGFsMztrAuMD4sXJb4EQ_Ncwduv1agRm0we5idiOdiZRf5IOENwA" target="_blank"> 
+                    <button class="btn">Apply</button>
+                </a>
+            </div>
+            <div class="column">
+                <a href="https://www.workopolis.com/jobsearch/immigration-refugee-jobs?job=br8CPBesZC_b_uhZpc1jpkuugPWMzAG_gwttrZg5f82yuH00DJ6wAg">  
+                    <img src="Pictures/directJobs2.png" width="100" height="100">
+                </a>
+                <p>The SEED is a community food project of the Guelph Community Health Centre. You will be part of a team that delivers groceries to community members participating in the Groceries From The SEED social enterprise.</p>  
+                <a href="https://www.workopolis.com/jobsearch/immigration-refugee-jobs?job=br8CPBesZC_b_uhZpc1jpkuugPWMzAG_gwttrZg5f82yuH00DJ6wAg" target="_blank">
+                    <button class="btn">Apply</button>
+                </a>  
+            </div>
+            <div class="column">
+                <a href="https://www.centrefornewcomers.ca/kitchentraining">  
+                    <img src="Pictures/directJobs3.png" width="100" height="100">
+                </a>
+                <p>Through the EthniCity Catering Training Program as a Kitchen Helper, you can gain valuable Canadian work experience and learn new skills to help you find a permanent job. We provide transitional employment and training for refugees.</p>
+                <a href="https://www.centrefornewcomers.ca/kitchentraining" target="_blank">
+                    <button class="btn">Apply</button>
+                </a>
+            </div>
+        </div>
+
+        <br>
+            <h1>Other Helpful Job Opportunity Links</h1>
+        <div class="row">
+            <div class="column">
+                <a href="https://irb.gc.ca/en/jobs/Pages/index.aspx"><h4>Immigration and Refugee Board of Canada</h4> </a>
+                    <p>At the Immigration and Refugee Board of Canada (IRB), you will work at Canada’s largest administrative tribunal. As we grow, we’ll need to expand our team. Grow your career with us and help shape the future of Canada!</p>
+            </div>
+            <div class="column">
+                <a href="https://www.mosaicbc.org/services/employment/refugee-employment-services/"><h4>MOSAIC BC Refugee Employment Services</h4> </a> 
+                    <p>MOSAIC’s Refugee Employment Services can help make you more effective in your job search by providing Canadian labour market information and a chance to explore opportunities with employers.</p>
+            </div>
+            <div class="column">
+                <a href="https://ociso.org/career-mentoring-program/"><h4>OCISO Career Mentoring Program</h4> </a> 
+                    <p>The Career Mentoring Program supports internationally educated professionals to obtain employment in their field. Clients are matched with a volunteer Career Mentor working in the same or a related field.</p>
+            </div>
+        </div>
+
+        <h1>Direct Hire Days</h1>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext">1/4</div>
+            <a href=""> <img src="Pictures/subway.png" style="width:100%"></a>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">2/4</div>
+                <a href=""> <img src="Pictures/md.png" style="width:100%"></a>
+                </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3/4</div>
+              <img src="Pictures/walmart.png" style="width:100%">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+    </body>
+</html>

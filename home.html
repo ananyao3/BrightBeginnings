@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Bright Beginnings </title>
+    <link rel="stylesheet" href="home.css">
+</head>
+    <style>
+    h1 {text-align: center;}
+    div {text-align: center;}
+</style>
+<body>
+  <div class="topnav">
+    <div class="nav2">
+      <img src="Pictures/logo.png" width="60%"></a>
+      </div>
+    <div class="fifth"> <a href="children.html">Children's Corner</a> </div>
+    <div class="fourth"> <a href="education.html">Educational Resources</a> </div>
+    <div class="third"> <a href="job.html">Job Opportunities</a> </div>
+    <div class="second"> <a href="resources.html">Free Resources</a> </div>
+    <div class="first"> <a href="home.html">Home</a> </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <div class="numbertext">1/4</div>
+        <img src="Pictures/front.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2/4</div>
+            <a href="job.html"> <img src="Pictures/DHD.png" style="width:100%"></a>
+            </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3/4</div>
+          <a href="children.html"> <img src="Pictures/Mario.png" style="width:100%"></a>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">4/4</div>
+          <a href="resources.html"><img src="Pictures/therapy.png" style="width:100%"></a>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+</body>
